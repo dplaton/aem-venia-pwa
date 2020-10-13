@@ -4,19 +4,20 @@ import { ApolloLink } from 'apollo-link';
 import { setContext } from 'apollo-link-context';
 import { RetryLink } from 'apollo-link-retry';
 import MutationQueueLink from '@adobe/apollo-link-mutation-queue';
+import { ModelManager } from '@adobe/aem-spa-page-model-manager';
 
 import { Util } from '@magento/peregrine';
 import { Adapter } from '@magento/venia-drivers';
-import store from './store';
 import app from '@magento/peregrine/lib/store/actions/app';
 import { AppContextProvider } from '@magento/venia-ui/lib/components/App';
 
+import store from './store';
 import { registerSW } from './registerSW';
 import App from './components/App';
 import './index.css';
-import { ModelClient, ModelManager } from '@adobe/aem-spa-page-model-manager';
 import { AemClient } from './AemClient';
 const { BrowserPersistence } = Util;
+
 const apiBase = new URL('/graphql', location.origin).toString();
 
 /**
