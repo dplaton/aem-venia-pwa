@@ -2,6 +2,7 @@ import React from 'react';
 import { MapTo, withModel } from '@adobe/aem-react-editable-components';
 
 import classes from './text.css';
+import classify from '@magento/venia-ui/lib/classify';
 
 export const TextEditConfig = {
     emptyLabel: 'Text',
@@ -12,12 +13,12 @@ export const TextEditConfig = {
 };
 
 const Text = props => {
-    const { itemPath, richText, text } = props;
-
+    const { cqPath, richText, text } = props;
+    const id = cqPath ? cqPath.substr(cqPath.lastIndexOf('/') + 1) : '';
     const richTextContent = () => (
         <div
             className={classes.aemText}
-            id={itemPath.substr(itemPath.lastIndexOf('/') + 1)}
+            id={id}
             data-rte-editelement
             dangerouslySetInnerHTML={{ __html: text }}
         />
@@ -29,7 +30,4 @@ const Text = props => {
         <div className={classes.aemText}>{text}</div>
     );
 };
-MapTo('venia/components/text')(Text, TextEditConfig);
 export default Text;
-
-export const AemText = withModel(Text, { injectPropsOnInit: true });

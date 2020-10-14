@@ -16,15 +16,14 @@ import { registerSW } from './registerSW';
 import App from './components/App';
 import './index.css';
 import { AemClient } from './AemClient';
+
 const { BrowserPersistence } = Util;
 
 const apiBase = new URL('/graphql', location.origin).toString();
-
 /**
  * The Venia adapter provides basic context objects: a router, a store, a
  * GraphQL client, and some common functions.
  */
-
 // The Venia adapter is not opinionated about auth.
 const authLink = setContext((_, { headers }) => {
     // get the authentication token from local storage if it exists.
