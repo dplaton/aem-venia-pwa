@@ -5,6 +5,14 @@ import classes from './teaser.css';
 
 import teaserQuery from './teaserQuery.graphql';
 
+export const TeaserEditConfig = {
+    emptyLabel: 'ProductTeaser',
+    isEmpty: props => {
+        return !props || !props.sku;
+    },
+    aemResourceType: 'venia/components/commerce/productteaser'
+};
+
 const Teaser = ({ sku }) => {
     console.log(`Got sku ${sku} from model`);
     const { data, loading } = useQuery(teaserQuery, { variables: { sku } });
