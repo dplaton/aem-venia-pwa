@@ -1,8 +1,6 @@
 import React from 'react';
-import { MapTo, withModel } from '@adobe/aem-react-editable-components';
 
 import classes from './text.css';
-import classify from '@magento/venia-ui/lib/classify';
 
 export const TextEditConfig = {
     emptyLabel: 'Text',
