@@ -1,5 +1,5 @@
 import { Page, MapTo, withModel } from '@adobe/aem-react-editable-components';
-import Text, { TextEditConfig } from '../Text';
+import Text, { TextEditConfig } from '../aem/Text';
 import Teaser from '../aem/Teaser';
 
 MapTo('venia/components/commerce/productteaser', Teaser);
