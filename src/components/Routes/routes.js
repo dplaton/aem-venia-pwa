@@ -6,7 +6,6 @@ import HomePage from '@magento/venia-ui/lib/components/HomePage';
 import AemRoute from '../AemRoute';
 
 import { useScrollTopOnChange } from '@magento/peregrine/lib/hooks/useScrollTopOnChange';
-import Teaser from '../aem/Teaser';
 
 const Routes = () => {
     const { pathname } = useLocation();
@@ -19,7 +18,6 @@ const Routes = () => {
                     <AemRoute />
                     {/* <MagentoRoute /> */}
                     <Route exact path="/">
-                        <Teaser sku={'WH01'} />
                         <HomePage />
                     </Route>
                 </Route>

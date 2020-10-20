@@ -15,6 +15,7 @@ import store from './store';
 import { registerSW } from './registerSW';
 import App from './components/App';
 import './index.css';
+import './aemgrid.css';
 import { AemClient } from './AemClient';
 
 const { BrowserPersistence } = Util;
@@ -50,8 +51,7 @@ const apolloLink = ApolloLink.from([
 ]);
 
 // initialize AEM model
-console.log(`AEM URL is ${process.env.AEM_URL}`);
-const modelClient = new AemClient('http://localhost:4502');
+const modelClient = new AemClient(AEM_URL);
 ModelManager.initializeAsync({
     modelClient
 });

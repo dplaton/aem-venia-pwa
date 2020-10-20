@@ -1,15 +1,27 @@
-.root .name {
-    font-size: 0.875rem;
-    line-height: 1rem;
-    margin: 0.5rem 0;
-    min-height: 1rem;
+.root {
+    position: relative;
+}
+.name {
+    position: absolute;
+    display: block;
+    left: 20%;
+    color: #fff;
+    font-weight: 900;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    top: 40%;
+    text-transform: uppercase;
+    font-size: 22px;
 }
 
-.root .price {
-    font-size: 0.875rem;
-    line-height: 1rem;
-    margin: 0.5rem 0;
-    min-height: 1rem;
+.price {
+    position: absolute;
+    display: block;
+    left: 20%;
+    color: #fff;
+    font-weight: 900;
+    top: 45%;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
 }
 .root .price .regularPrice {
     text-decoration: line-through;
@@ -21,21 +33,14 @@
     font-size: 1.2rem;
 }
 
-.images {
-    display: grid;
-    grid-template-areas: 'main';
-}
-
 .image {
+    border: 1px solid #3498db;
     display: block;
     grid-area: main;
     height: auto;
     opacity: 1;
-    -webkit-transition-duration: 512ms;
     transition-duration: 512ms;
-    -webkit-transition-property: opacity, visibility;
     transition-property: opacity, visibility;
-    -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
     visibility: visible;
     width: 100%;

@@ -9,5 +9,5 @@ const AemPage = props => {
 };
 
 export default withModel(AemPage, { injectPropsOnInit: true });
-MapTo('venia/components/commerce/productteaser', Teaser);
+MapTo('venia/components/commerce/productteaser')(Teaser);
 MapTo('venia/components/text')(Text, TextEditConfig);
