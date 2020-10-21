@@ -14,18 +14,22 @@ export class AemClient extends ModelClient {
         }
 
         const url = `${this._apiHost}${modelPath}`;
-
-        return fetch(url, FETCH_CONFIG).then(response => {
-            const { status, statusText } = response;
-            if (status >= 200 && status < 300) {
-                return response.json();
-            } else {
-                const error = new Error(
-                    `Error fetching the model for url ${url}:`,
-                    statusText || status
-                );
-                return Promise.reject(error);
-            }
-        });
+        console.log(`Fetching model from ${url}`);
+        return fetch(url, FETCH_CONFIG)
+            .then(response => {
+                const { status, statusText } = response;
+                if (status >= 200 && status < 300) {
+                    return response.json();
+                } else {
+                    const error = new Error(
+                        `Error fetching the model for url ${url}:`,
+                        statusText || status
+                    );
+                    return Promise.reject(error);
+                }
+            })
+            .catch(error => {
+                console.log(error);
+            });
     }
 }

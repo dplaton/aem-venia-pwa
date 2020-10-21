@@ -1,24 +1,11 @@
 import React from 'react';
-import { useQuery, gql } from '@apollo/client';
 import { oneOf, string } from 'prop-types';
+import { useApolloClient, useQuery, gql } from '@apollo/client';
 import LoadingIndicator from '@magento/venia-ui/lib/components/LoadingIndicator';
 import Button from '@magento/venia-ui/lib/components/Button';
 import Image from '@magento/venia-ui/lib/components/Image';
 import classes from './teaser.css';
-
-const getProductBySku = gql`
-    query getProducts($sku: String!) {
-        products(filter: { sku: { eq: $sku } }) {
-            items {
-                sku
-                name
-                media_gallery {
-                    url
-                }
-            }
-        }
-    }
-`;
+import getProductBySku from './getProductsBySku.graphql';
 
 export const TeaserEditConfig = {
     emptyLabel: 'ProductTeaser',
@@ -30,52 +17,71 @@ export const TeaserEditConfig = {
 
 const Teaser = ({ selection: sku, cta, ctaText }) => {
     console.log(`Got sku ${sku} from model`);
-    // const { data, loading, error } = useQuery(getProductBySku, {
-    //     variables: { sku }
-    // });
+    const theClient = useApolloClient();
 
-    // if (loading) {
-    //     return <LoadingIndicator />;
-    // }
-
-    // if (error) {
-    //     console.log(error);
-    // }
-
-    // console.log(data);
-
-    const data = {
-        products: {
-            items: [
-                {
-                    sku: 'WH01',
-                    name: 'Mona Pullover Hoodlie',
-                    price_range: {
-                        minimum_price: {
-                            final_price: {
-                                value: 57,
-                                currency: 'USD'
-                            }
-                        },
-                        maximum_price: {
-                            final_price: {
-                                value: 57,
-                                currency: 'USD'
-                            }
-                        }
-                    },
-                    media_gallery: [
-                        {
-                            url:
-                                'http://magento2.vagrant122/pub/media/catalog/product/cache/845ad571ab8a8e47e8998fe862c6dfe2/w/h/wh01-green_main_2.jpg'
-                        }
-                    ]
-                }
-            ]
+    const { data, loading, error, networkStatus } = useQuery(
+        getProductBySku,
+        {
+            variables: { sku }
+        },
+        {
+            fetchPolicy: 'network-only',
+            notifyOnNetworkStatusChange: true,
+            client: theClient
         }
-    };
+    );
+
+    console.log(`Network status from query ${networkStatus}`);
+
+    if (loading) {
+        return <LoadingIndicator />;
+    }
+
+    if (error) {
+        console.log(error);
+    }
+    console.log(data);
+
+    if (data.products.items.length < 0) {
+        return <p>No data received from Magento</p>;
+    }
+
+    // const data = {
+    //     products: {
+    //         items: [
+    //             {
+    //                 sku: 'WH01',
+    //                 name: 'Mona Pullover Hoodlie',
+    //                 price_range: {
+    //                     minimum_price: {
+    //                         final_price: {
+    //                             value: 57,
+    //                             currency: 'USD'
+    //                         }
+    //                     },
+    //                     maximum_price: {
+    //                         final_price: {
+    //                             value: 57,
+    //                             currency: 'USD'
+    //                         }
+    //                     }
+    //                 },
+    //                 media_gallery: [
+    //                     {
+    //                         url:
+    //                             'http://magento2.vagrant122/pub/media/catalog/product/cache/845ad571ab8a8e47e8998fe862c6dfe2/w/h/wh01-green_main_2.jpg'
+    //                     }
+    //                 ]
+    //             }
+    //         ]
+    //     }
+    // };
 
     const { items } = data.products;
+
+    if (items.length < 1) {
+        return <LoadingIndicator />;
+    }
 
     const { name, media_gallery, price_range } = items[0];
     const {

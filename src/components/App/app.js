@@ -3,15 +3,16 @@ import { array, func, shape, string } from 'prop-types';
 
 import { useToasts } from '@magento/peregrine';
 import { useApp } from '@magento/peregrine/lib/talons/App/useApp';
+
+import globalCSS from '../../index.css';
 import { HeadProvider, Title } from '@magento/venia-ui/lib/components/Head';
 import Mask from '@magento/venia-ui/lib/components/Mask';
-import MiniCart from '@magento/venia-ui/lib/components/MiniCart';
 import Navigation from '@magento/venia-ui/lib/components/Navigation';
+import Main from '@magento/venia-ui/lib/components/Main';
+//import Routes from '@magento/venia-ui/lib/components/Routes';
+import Routes from '../Routes';
 import ToastContainer from '@magento/venia-ui/lib/components/ToastContainer';
 import Icon from '@magento/venia-ui/lib/components/Icon';
-
-import Main from '../Main';
-import Routes from '../Routes';
 
 import {
     AlertCircle as AlertCircleIcon,
@@ -96,7 +97,6 @@ const App = props => {
             </Main>
             <Mask isActive={hasOverlay} dismiss={handleCloseDrawer} />
             <Navigation />
-            <MiniCart />
             <ToastContainer />
         </HeadProvider>
     );
@@ -109,5 +109,7 @@ App.propTypes = {
     }),
     unhandledErrors: array
 };
+
+App.globalCSS = globalCSS;
 
 export default App;
