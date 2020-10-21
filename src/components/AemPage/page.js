@@ -4,7 +4,6 @@ import Text, { TextEditConfig } from '../aem/Text';
 import Teaser from '../aem/Teaser';
 
 const AemPage = props => {
-    console.log(props);
     return <Page {...props} />;
 };
 
