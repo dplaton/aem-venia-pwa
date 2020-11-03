@@ -7,7 +7,7 @@ export const TextEditConfig = {
     isEmpty: function(props) {
         return !props || !props.text || !props.text.trim().length < 1;
     },
-    aemResourceType: 'venia/components/text'
+    resourceType: 'venia/components/text'
 };
 
 const Text = props => {
