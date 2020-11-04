@@ -12,7 +12,7 @@ export const TeaserEditConfig = {
     isEmpty: props => {
         return !props || !props.sku;
     },
-    aemResourceType: 'venia/components/commerce/productteaser'
+    resourceType: 'venia/components/commerce/productteaser'
 };
 
 const Teaser = ({ selection: sku, cta, ctaText }) => {
