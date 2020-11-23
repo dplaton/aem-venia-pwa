@@ -1,6 +1,0 @@
-com/adobe/venia/core/servlets/SimpleServletTest.class
-com/adobe/venia/core/models/commerce/MyProductTeaserImplTest.class
-com/adobe/venia/core/listeners/SimpleResourceListenerTest.class
-com/adobe/venia/core/models/HelloWorldModelTest.class
-com/adobe/venia/core/schedulers/SimpleScheduledTaskTest.class
-com/adobe/venia/core/filters/LoggingFilterTest.class
