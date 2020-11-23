@@ -12,6 +12,14 @@ The AEM package was bootstrapped using the AEM Project Archetype, to it has the 
 -   `ui.content` contains the sample content
 -   `core` contains the Sling Models require to render the content
 
+### Prerequisites for local development
+
+Since this project involves a lot of resources loaded client site you need to set up a CORS proxy in your local environment. I use [local-cors-proxy](https://github.com/garmeeh/local-cors-proxy) because spinning up a proxy is a one liner, but any proxy server solution would do.
+
+```bash
+npx local-cors-proxy --proxyUrl (your PWA Studio app URL) --port 8888 --proxyPartial ''
+```  
+
 ### The PWA Studio app
 
 The PWA studio app is in the `ui.frontend` project. For instructions on how to build and run the app, please refer to the README of that project.
@@ -35,3 +43,4 @@ Use `mvn clean install -PautoInstallSinglePackage` to install this package in AE
 ### Step 4: Check that everything works
 
 Open the URL of the PWA Studio App in your browser. The home page of the app should display a product teaser from your Magento instance. Depending on what sample data you have in your local instance you may need to re-configure the SKU that the product teasers is using.
+
