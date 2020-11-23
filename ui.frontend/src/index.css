@@ -1,3 +1,5 @@
+@import url('~@magento/venia-ui/lib/tokens.css');
+
 * {
     box-sizing: border-box;
 }
