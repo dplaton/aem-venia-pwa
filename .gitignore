@@ -1,5 +1,9 @@
 .idea
 .vscode
+.settings
+.classpath
+.project
+**/target/**
 coverage
 node_modules
 storybook-dist
@@ -13,3 +17,4 @@ lastCachedGraphQLSchema.json
 test-report.xml
 test-results.json
 yarn-error.log
+clientlib
