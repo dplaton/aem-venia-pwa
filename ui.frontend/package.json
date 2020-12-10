@@ -30,9 +30,9 @@
     "@magento/venia-drivers": "src/drivers"
   },
   "dependencies": {
-    "@adobe/aem-react-editable-components": "~1.1.0",
+    "@adobe/aem-react-editable-components": "~1.1.1",
     "@adobe/aem-spa-component-mapping": "^1.0.7",
-    "@adobe/aem-spa-page-model-manager": "^1.2.3",
+    "@adobe/aem-spa-page-model-manager": "^1.2.4",
     "@magento/pwa-buildpack": "~7.0.0"
   },
   "devDependencies": {

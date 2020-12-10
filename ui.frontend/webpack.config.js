@@ -58,6 +58,9 @@ module.exports = async env => {
              */
             POSSIBLE_TYPES: JSON.stringify(possibleTypes),
             AEM_URL: JSON.stringify(process.env.AEM_URL),
+            MAGENTO_BACKEND_URL: JSON.stringify(
+                process.env.MAGENTO_BACKEND_URL
+            ),
             STORE_NAME: JSON.stringify('Venia'),
             STORE_VIEW_LOCALE: JSON.stringify(global.LOCALE),
             STORE_VIEW_CODE: process.env.STORE_VIEW_CODE

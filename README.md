@@ -18,7 +18,7 @@ Since this project involves a lot of resources loaded client site you need to se
 
 ```bash
 npx local-cors-proxy --proxyUrl (your PWA Studio app URL) --port 8888 --proxyPartial ''
-```  
+```
 
 ### The PWA Studio app
 
@@ -43,4 +43,3 @@ Use `mvn clean install -PautoInstallSinglePackage` to install this package in AE
 ### Step 4: Check that everything works
 
 Open the URL of the PWA Studio App in your browser. The home page of the app should display a product teaser from your Magento instance. Depending on what sample data you have in your local instance you may need to re-configure the SKU that the product teasers is using.
-

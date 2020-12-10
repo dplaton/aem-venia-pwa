@@ -21,8 +21,10 @@ import store from './store';
 import { AemClient } from './AemClient';
 import './aemgrid.css';
 const { BrowserPersistence } = Util;
-const apiBase = new URL('/graphql', location.origin).toString();
 
+const appScope = new URL(__webpack_public_path__, MAGENTO_BACKEND_URL);
+const apiBase = new URL('graphql', appScope).toString();
+console.log(`Got API base`, apiBase, appScope);
 /**
  * The Venia adapter provides basic context objects: a router, a store, a
  * GraphQL client, and some common functions.
