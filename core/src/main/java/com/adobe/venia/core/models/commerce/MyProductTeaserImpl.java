@@ -74,7 +74,7 @@ public class MyProductTeaserImpl implements MyProductTeaser {
 
     @Override
     public String getSku() {
-        return properties.get("sku","");
+        return properties.get("selection","");
     }
 
     @Override
