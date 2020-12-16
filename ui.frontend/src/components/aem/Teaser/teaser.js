@@ -10,12 +10,19 @@ import getProductBySku from './getProductsBySku.graphql';
 export const TeaserEditConfig = {
     emptyLabel: 'ProductTeaser',
     isEmpty: props => {
-        return !props || !props.sku;
+        console.log(`Got selection`, props.selection);
+        return !props || !props.selection || props.selection.length === 0;
     },
     resourceType: 'venia/components/commerce/productteaser'
 };
 
-const Teaser = ({ selection: sku, cta, ctaText }) => {
+const Teaser = ({ selection, cta, ctaText }) => {
+    const sku =
+        selection && selection.length > 0 && selection.indexOf('#') > -1
+            ? selection.slice(0, selection.indexOf('#'))
+            : selection;
+    console.log(`Got sku ${sku}, retrieving product`);
+
     const { data, loading, error } = useQuery(getProductBySku, {
         variables: { sku }
     });
@@ -28,12 +35,11 @@ const Teaser = ({ selection: sku, cta, ctaText }) => {
         console.error(error);
     }
 
-    if (data.products.items.length < 0) {
+    if (data.products.items.length === 0) {
         return <p>No data received from Magento</p>;
     }
 
     const { items } = data.products;
-
     const { name, media_gallery, price_range } = items[0];
     const {
         maximum_price: {
