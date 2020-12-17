@@ -7,7 +7,6 @@ import { onError } from '@apollo/client/link/error';
 import { RetryLink } from '@apollo/client/link/retry';
 import getWithPath from 'lodash.get';
 import setWithPath from 'lodash.set';
-import { ModelManager } from '@adobe/aem-spa-page-model-manager';
 import MutationQueueLink from '@adobe/apollo-link-mutation-queue';
 
 import { Util } from '@magento/peregrine';
@@ -18,7 +17,6 @@ import { AppContextProvider } from '@magento/venia-ui/lib/components/App';
 import App from './components/App';
 import { registerSW } from './registerSW';
 import store from './store';
-import { AemClient } from './AemClient';
 import './aemgrid.css';
 const { BrowserPersistence } = Util;
 
@@ -115,11 +113,6 @@ const apolloLink = ApolloLink.from([
     // An apollo-link-http Link
     Adapter.apolloLink(apiBase)
 ]);
-
-const modelClient = new AemClient(AEM_URL);
-ModelManager.initializeAsync({
-    modelClient
-});
 
 ReactDOM.render(
     <Adapter apiBase={apiBase} apollo={{ link: apolloLink }} store={store}>

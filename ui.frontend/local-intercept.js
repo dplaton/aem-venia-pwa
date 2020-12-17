@@ -16,7 +16,17 @@
  * with many customizations, this function would tap those targets and add
  * or modify functionality from its dependencies.
  */
+const myName = '@adobe/aem-core-components';
 
-function localIntercept(targets) {}
+function localIntercept(targets) {
+    targets
+        .of('@magento/venia-ui')
+        .richContentRenderers.tap(richContentRenderers => {
+            richContentRenderers.add({
+                componentName: 'Component',
+                importPath: myName
+            });
+        });
+}
 
 module.exports = localIntercept;
