@@ -14,13 +14,16 @@
 package com.adobe.venia.core.models.commerce;
 
 import javax.annotation.PostConstruct;
+import javax.inject.Inject;
 
 import org.apache.sling.api.SlingHttpServletRequest;
+import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ValueMap;
 import org.apache.sling.models.annotations.Exporter;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.ScriptVariable;
 
+import com.adobe.cq.commerce.core.components.internal.models.v1.productteaser.ProductTeaserImpl;
 import com.adobe.cq.commerce.core.components.models.common.Price;
 import com.adobe.cq.commerce.core.components.models.retriever.AbstractProductRetriever;
 import com.adobe.cq.export.json.ExporterConstants;
@@ -36,7 +39,8 @@ public class MyProductTeaserImpl implements MyProductTeaser {
 
     @ScriptVariable
     private ValueMap properties;
-
+    @Inject
+    private Resource resource;
     @PostConstruct
     public void initModel() {
 
@@ -74,6 +78,11 @@ public class MyProductTeaserImpl implements MyProductTeaser {
 
     @Override
     public String getSku() {
+        return null;
+    }
+
+    @Override
+    public String getSelection() {
         return properties.get("selection","");
     }
 
@@ -90,5 +99,10 @@ public class MyProductTeaserImpl implements MyProductTeaser {
     @Override
     public AbstractProductRetriever getProductRetriever() {
         return null;
+    }
+
+    @Override
+    public String getExportedType() {
+        return resource.getResourceType();
     }
 }
