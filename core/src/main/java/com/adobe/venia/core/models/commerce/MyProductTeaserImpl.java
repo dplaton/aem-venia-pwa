@@ -16,6 +16,7 @@ package com.adobe.venia.core.models.commerce;
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ValueMap;
@@ -23,16 +24,17 @@ import org.apache.sling.models.annotations.Exporter;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.ScriptVariable;
 
-import com.adobe.cq.commerce.core.components.internal.models.v1.productteaser.ProductTeaserImpl;
 import com.adobe.cq.commerce.core.components.models.common.Price;
 import com.adobe.cq.commerce.core.components.models.retriever.AbstractProductRetriever;
+import com.adobe.cq.export.json.ComponentExporter;
 import com.adobe.cq.export.json.ExporterConstants;
 
 @Model(adaptables = SlingHttpServletRequest.class,
-    adapters = MyProductTeaser.class,
+    adapters = { MyProductTeaser.class, ComponentExporter.class },
     resourceType = MyProductTeaserImpl.RESOURCE_TYPE)
 @Exporter(name = ExporterConstants.SLING_MODEL_EXPORTER_NAME,
     extensions = ExporterConstants.SLING_MODEL_EXTENSION)
+
 public class MyProductTeaserImpl implements MyProductTeaser {
 
     protected static final String RESOURCE_TYPE = "venia/components/commerce/productteaser";
@@ -78,17 +80,18 @@ public class MyProductTeaserImpl implements MyProductTeaser {
 
     @Override
     public String getSku() {
-        return null;
+        String selection = properties.get("selection", "");
+        return StringUtils.substringBefore(selection, "#");
     }
 
     @Override
-    public String getSelection() {
-        return properties.get("selection","");
+    public String getCtaText() {
+        return properties.get("ctaText", "");
     }
 
     @Override
     public String getCallToAction() {
-        return "";
+        return properties.get("cta", "");
     }
 
     @Override

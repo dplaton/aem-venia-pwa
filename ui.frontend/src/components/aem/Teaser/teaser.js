@@ -10,17 +10,12 @@ import getProductBySku from './getProductsBySku.graphql';
 export const TeaserEditConfig = {
     emptyLabel: 'ProductTeaser',
     isEmpty: props => {
-        console.log(`Got selection`, props.selection);
-        return !props || !props.selection || props.selection.length === 0;
+        return !props || !props.sku || props.sku.length === 0;
     },
     resourceType: 'venia/components/commerce/productteaser'
 };
 
-const Teaser = ({ selection, cta, ctaText }) => {
-    const sku =
-        selection && selection.length > 0 && selection.indexOf('#') > -1
-            ? selection.slice(0, selection.indexOf('#'))
-            : selection;
+const Teaser = ({ sku, cta, ctaText }) => {
     console.log(`Got sku ${sku}, retrieving product`);
 
     const { data, loading, error } = useQuery(getProductBySku, {
@@ -84,7 +79,7 @@ const Teaser = ({ selection, cta, ctaText }) => {
 };
 
 Teaser.propTypes = {
-    selection: string.isRequired,
+    sku: string.isRequired,
     cta: oneOf(['add-to-cart', 'details', '']).isRequired,
     ctaText: string.isRequired
 };

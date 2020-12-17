@@ -23,5 +23,10 @@ public interface MyProductTeaser extends ProductTeaser {
     // want to expose to the HTL template.
     public Boolean isShowBadge();
 
-    public String getSelection();
+    /**
+     * The text of the Call-to-action button of this teaser
+     * @return The text of the button or an empty string if the text is not configured.
+     */
+    String getCtaText();
+
 }
