@@ -19,7 +19,6 @@ MapTo('venia/components/text')(Text, TextEditConfig);
 MapTo('venia/components/container')(ResponsiveGrid, {
     emptyLabel: 'Container',
     isEmpty: props => {
-        console.log(`Hurr durr container`, props);
         return props.cqItemsOrder && props.cqItemsOrder.length > 0;
     },
     resourceType: 'venia/components/container'
