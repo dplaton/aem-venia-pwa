@@ -11,7 +11,7 @@
  *    governing permissions and limitations under the License.
  *
  ******************************************************************************/
-package com.adobe.venia.core.models.commerce;
+package com.adobe.venia.core.internal.models.commerce;
 
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
@@ -28,6 +28,7 @@ import com.adobe.cq.commerce.core.components.models.common.Price;
 import com.adobe.cq.commerce.core.components.models.retriever.AbstractProductRetriever;
 import com.adobe.cq.export.json.ComponentExporter;
 import com.adobe.cq.export.json.ExporterConstants;
+import com.adobe.venia.core.models.commerce.MyProductTeaser;
 
 @Model(adaptables = SlingHttpServletRequest.class,
     adapters = { MyProductTeaser.class, ComponentExporter.class },

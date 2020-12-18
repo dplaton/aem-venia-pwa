@@ -7,7 +7,7 @@ import Image from '@magento/venia-ui/lib/components/Image';
 import classes from './teaser.css';
 import getProductBySku from './getProductsBySku.graphql';
 
-export const TeaserEditConfig = {
+export const ProductTeaserEditConfig = {
     emptyLabel: 'ProductTeaser',
     isEmpty: props => {
         return !props || !props.sku || props.sku.length === 0;
@@ -15,7 +15,7 @@ export const TeaserEditConfig = {
     resourceType: 'venia/components/commerce/productteaser'
 };
 
-const Teaser = ({ sku, cta, ctaText }) => {
+const ProductTeaser = ({ sku, callToAction, ctaText }) => {
     console.log(`Got sku ${sku}, retrieving product`);
 
     const { data, loading, error } = useQuery(getProductBySku, {
@@ -53,10 +53,12 @@ const Teaser = ({ sku, cta, ctaText }) => {
         console.log(`More details`);
     };
     let handler;
-    if (cta === 'add-to-cart') {
+    if (callToAction === 'add-to-cart') {
         handler = addToCartHandler;
-    } else if (cta === 'details') {
+    } else if (callToAction === 'details') {
         handler = moreDetailsHandler;
+    } else {
+        handler = () => {};
     }
 
     return (
@@ -78,10 +80,10 @@ const Teaser = ({ sku, cta, ctaText }) => {
     );
 };
 
-Teaser.propTypes = {
+ProductTeaser.propTypes = {
     sku: string.isRequired,
-    cta: oneOf(['add-to-cart', 'details', '']).isRequired,
+    callToAction: oneOf(['add-to-cart', 'details', '']).isRequired,
     ctaText: string.isRequired
 };
 
-export default Teaser;
+export default ProductTeaser;
