@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="f941ec7b-f7d6-421d-a2fa-7498ff629dd8">
+    <jcr:content
+        cq:name="999"
+        cq:parentPath="/content/dam/venia/offers"
+        jcr:description="November Sale"
+        jcr:lastModified="{Date}2020-09-12T13:43:13.369Z"
+        jcr:lastModifiedBy="MSZULC@ADOBE.COM"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="999"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2020-09-12T13:43:13.370Z">
+        <data
+            cq:model="/conf/venia/settings/dam/cfm/models/article"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                Main="&lt;p>Here is the article&lt;/p>&#xa;"
+                Main_x0040_ContentType="text/html"
+                Main_x0040_LastModified="{Date}2020-09-06T10:55:10.153Z"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

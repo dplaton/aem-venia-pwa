@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:lastModified="{Date}2020-09-08T10:43:39.915Z"
+    jcr:lastModifiedBy="MSZULC@ADOBE.COM"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="sling:OrderedFolder">
+    <jcr:content
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Runners"
+        autotag="{Boolean}true"
+        dmpublish-mode=""
+        imageProfile="/conf/global/settings/dam/adminui-extension/imageprofile/Venia-Standard"
+        s7-sync-mode="include"
+        sourcing="false"
+        videoProfile="/conf/global/settings/dam/dm/presets/video/asda">
+        <folderThumbnail/>
+    </jcr:content>
+    <shoeSubstance.glb/>
+</jcr:root>

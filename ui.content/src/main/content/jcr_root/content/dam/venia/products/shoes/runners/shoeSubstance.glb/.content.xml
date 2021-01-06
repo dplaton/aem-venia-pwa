@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="cce7c974-75e4-4e82-98f8-1f693a56d14f">
+    <jcr:content
+        cq:lastReplicated="{Date}2020-09-08T10:50:23.109Z"
+        cq:lastReplicatedBy="MSZULC@ADOBE.COM"
+        cq:lastReplicationAction="Activate"
+        dam:assetState="processed"
+        dam:imageServerAsset="{Boolean}true"
+        dam:processingId="ac130ba7-e624-453e-9839-d78c8da24f1d"
+        dam:processingRenditions="[cq5dam.web.1280.1280.jpeg,cq5dam.thumbnail.319.319.png,cq5dam.thumbnail.140.100.png,cqdam.text.txt,cqdam.metadata.xml,cq5dam.thumbnail.48.48.png]"
+        dam:processingRequestedDate="{Date}2020-09-08T10:44:19.885Z"
+        dam:runPostProcess="{Boolean}true"
+        dam:s7damType="ThreeD"
+        dam:scene7BatchId="xOZQbXQBAADTRw9_Cgq6en_aIm_TT2YH"
+        dam:scene7RequestID="ac130ba7-e624-453e-9839-d78c8da24f1d"
+        jcr:lastModified="{Date}2021-01-06T11:03:12.330+02:00"
+        jcr:lastModifiedBy="MSZULC@ADOBE.COM"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="dam:AssetContent"
+        status="Finished">
+        <dam:failedRenditions jcr:primaryType="nt:unstructured">
+            <cq5dam.thumbnail.319.319.png
+                jcr:primaryType="nt:unstructured"
+                message="Format png is not supported for glb files"
+                reason="RenditionFormatUnsupported"/>
+            <cq5dam.web.1280.1280.jpeg
+                jcr:primaryType="nt:unstructured"
+                message="Format jpeg is not supported for glb files"
+                reason="RenditionFormatUnsupported"/>
+            <cq5dam.thumbnail.140.100.png
+                jcr:primaryType="nt:unstructured"
+                message="Format png is not supported for glb files"
+                reason="RenditionFormatUnsupported"/>
+            <cq5dam.thumbnail.48.48.png
+                jcr:primaryType="nt:unstructured"
+                message="Format png is not supported for glb files"
+                reason="RenditionFormatUnsupported"/>
+        </dam:failedRenditions>
+        <metadata
+            dam:extracted="{Date}2021-01-06T11:03:08.548+02:00"
+            dam:interactive3DAsset="True"
+            dam:scene7APIServer="https://s7sps5apissl.scene7.com"
+            dam:scene7CloudConfigPath="/conf/venia/settings/cloudconfigs/dmscene7"
+            dam:scene7CompanyID="c|4058"
+            dam:scene7Domain="http://s7ap1.scene7.com/"
+            dam:scene7File="adobeanz/shoeSubstance"
+            dam:scene7FileStatus="PublishComplete"
+            dam:scene7Folder="adobeanz/venia/products/shoes/runners/"
+            dam:scene7ID="a|57837417"
+            dam:scene7LastModified="{Long}1599561873508"
+            dam:scene7Name="shoeSubstance"
+            dam:scene7PublishedBy="MSZULC@ADOBE.COM"
+            dam:scene7PublishTimeStamp="{Date}2020-09-08T10:50:34.680Z"
+            dam:scene7Type="ThreeD"
+            dam:scene7UploadTimeStamp="{Date}2020-09-08T10:44:45.910Z"
+            dam:sha1="33b7d07f13ebf70dba0c83a7c3846e3d89a1081a"
+            dam:size="{Long}21289868"
+            dc:format="model/gltf-binary"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            photoshop:ColorMode="{Long}3"
+            photoshop:ICCProfile="sRGB IEC61966-2.1"
+            xmp:CreateDate="{Date}2019-07-16T20:18:10.000-07:00"
+            xmp:CreatorTool="Adobe Photoshop CC 2019 (Windows)"
+            xmp:MetadataDate="{Date}2019-07-16T20:18:39.000-07:00"
+            xmp:ModifyDate="{Date}2019-07-16T20:18:39.000-07:00"
+            xmpMM:DocumentID="adobe:docid:photoshop:66c0596a-0959-c541-80ac-5607cea374d0"
+            xmpMM:InstanceID="xmp.iid:9cf7333d-0e38-f547-87fb-78c1c239fd17"
+            xmpMM:OriginalDocumentID="xmp.did:38082205-756b-a048-8e46-d70ca9fd7c1e">
+            <xmpMM:History
+                jcr:primaryType="nt:unstructured"
+                xmpArraySize="{Long}3"
+                xmpArrayType="rdf:Seq"
+                xmpNodeType="xmpArray">
+                <_x0031_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="created"
+                    stEvt:instanceID="xmp.iid:38082205-756b-a048-8e46-d70ca9fd7c1e"
+                    stEvt:softwareAgent="Adobe Photoshop CC 2019 (Windows)"
+                    stEvt:when="{Date}2019-07-16T20:18:10.000-07:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0032_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="converted"
+                    stEvt:parameters="from image/png to image/jpeg"
+                    xmpNodeType="xmpStruct"/>
+                <_x0033_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/"
+                    stEvt:instanceID="xmp.iid:9cf7333d-0e38-f547-87fb-78c1c239fd17"
+                    stEvt:softwareAgent="Adobe Photoshop CC 2019 (Windows)"
+                    stEvt:when="{Date}2019-07-16T20:18:39.000-07:00"
+                    xmpNodeType="xmpStruct"/>
+            </xmpMM:History>
+        </metadata>
+        <related jcr:primaryType="nt:unstructured"/>
+        <usages
+            dam:score="{Long}1"
+            jcr:primaryType="nt:unstructured"
+            usedBy="[aem]">
+            <aem
+                jcr:primaryType="nt:unstructured"
+                count="{Long}1"
+                lastUsed="{Date}2020-09-08T10:47:50.741Z"/>
+        </usages>
+    </jcr:content>
+</jcr:root>

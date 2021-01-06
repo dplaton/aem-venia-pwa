@@ -1,0 +1,437 @@
+<?xml version="1.0"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 6.2.4">
+  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <rdf:Description rdf:about=""
+        xmlns:aux="http://ns.adobe.com/exif/1.0/aux/"
+        xmlns:crs="http://ns.adobe.com/camera-raw-settings/1.0/"
+        xmlns:dc="http://purl.org/dc/elements/1.1/"
+        xmlns:exif="http://ns.adobe.com/exif/1.0/"
+        xmlns:exifEX="http://cipa.jp/exif/1.0/"
+        xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/"
+        xmlns:tiff="http://ns.adobe.com/tiff/1.0/"
+        xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+        xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"
+        xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#"
+        xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#"
+        xmlns:pur="http://prismstandard.org/namespaces/prismusagerights/2.1/"
+        xmlns:dam="http://www.day.com/dam/1.0"
+      aux:ApproximateFocusDistance="73/100"
+      aux:Firmware="1.2.3"
+      aux:FlashCompensation="0/1"
+      aux:Lens="EF24-70mm f/2.8L II USM"
+      aux:LensID="495"
+      aux:LensInfo="24/1 70/1 0/0 0/0"
+      aux:SerialNumber="268021005274"
+      crs:AlreadyApplied="True"
+      crs:AutoLateralCA="1"
+      crs:AutoWhiteVersion="134348800"
+      crs:Blacks2012="0"
+      crs:BlueHue="0"
+      crs:BlueSaturation="0"
+      crs:CameraProfile="Adobe Standard"
+      crs:CameraProfileDigest="87FB0EDC503E332309FB5DE5C5C65125"
+      crs:Clarity2012="+39"
+      crs:ColorNoiseReduction="25"
+      crs:ColorNoiseReductionDetail="50"
+      crs:ColorNoiseReductionSmoothness="50"
+      crs:Contrast2012="0"
+      crs:ConvertToGrayscale="False"
+      crs:CropAngle="0"
+      crs:CropBottom="0.956205"
+      crs:CropConstrainToWarp="0"
+      crs:CropLeft="0.043795"
+      crs:CropRight="0.956205"
+      crs:CropTop="0.043795"
+      crs:DefringeGreenAmount="0"
+      crs:DefringeGreenHueHi="60"
+      crs:DefringeGreenHueLo="40"
+      crs:DefringePurpleAmount="0"
+      crs:DefringePurpleHueHi="70"
+      crs:DefringePurpleHueLo="30"
+      crs:Exposure2012="-1.45"
+      crs:GrainAmount="0"
+      crs:GreenHue="0"
+      crs:GreenSaturation="0"
+      crs:HasCrop="True"
+      crs:HasSettings="True"
+      crs:Highlights2012="0"
+      crs:HueAdjustmentAqua="0"
+      crs:HueAdjustmentBlue="0"
+      crs:HueAdjustmentGreen="0"
+      crs:HueAdjustmentMagenta="0"
+      crs:HueAdjustmentOrange="0"
+      crs:HueAdjustmentPurple="0"
+      crs:HueAdjustmentRed="0"
+      crs:HueAdjustmentYellow="0"
+      crs:LensManualDistortionAmount="0"
+      crs:LensProfileChromaticAberrationScale="100"
+      crs:LensProfileDigest="AFEEACDA8777F259982DCD59A5178FC0"
+      crs:LensProfileDistortionScale="100"
+      crs:LensProfileEnable="1"
+      crs:LensProfileFilename="Canon EOS 5D Mark II (Canon EF 24-70mm f2.8 L II USM) - RAW.lcp"
+      crs:LensProfileName="Adobe (Canon EF 24-70mm f/2.8 L II USM)"
+      crs:LensProfileSetup="LensDefaults"
+      crs:LensProfileVignettingScale="100"
+      crs:LuminanceAdjustmentAqua="0"
+      crs:LuminanceAdjustmentBlue="0"
+      crs:LuminanceAdjustmentGreen="0"
+      crs:LuminanceAdjustmentMagenta="0"
+      crs:LuminanceAdjustmentOrange="0"
+      crs:LuminanceAdjustmentPurple="0"
+      crs:LuminanceAdjustmentRed="0"
+      crs:LuminanceAdjustmentYellow="0"
+      crs:LuminanceSmoothing="0"
+      crs:ParametricDarks="0"
+      crs:ParametricHighlightSplit="75"
+      crs:ParametricHighlights="0"
+      crs:ParametricLights="0"
+      crs:ParametricMidtoneSplit="50"
+      crs:ParametricShadowSplit="25"
+      crs:ParametricShadows="0"
+      crs:PerspectiveAspect="0"
+      crs:PerspectiveHorizontal="0"
+      crs:PerspectiveRotate="0.0"
+      crs:PerspectiveScale="100"
+      crs:PerspectiveUpright="0"
+      crs:PerspectiveVertical="0"
+      crs:PostCropVignetteAmount="0"
+      crs:ProcessVersion="6.7"
+      crs:RawFileName="EN4A4500.dng"
+      crs:RedHue="0"
+      crs:RedSaturation="0"
+      crs:SaturationAdjustmentAqua="0"
+      crs:SaturationAdjustmentBlue="0"
+      crs:SaturationAdjustmentGreen="0"
+      crs:SaturationAdjustmentMagenta="0"
+      crs:SaturationAdjustmentOrange="0"
+      crs:SaturationAdjustmentPurple="0"
+      crs:SaturationAdjustmentRed="0"
+      crs:SaturationAdjustmentYellow="0"
+      crs:ShadowTint="0"
+      crs:Shadows2012="0"
+      crs:SharpenDetail="25"
+      crs:SharpenEdgeMasking="0"
+      crs:SharpenRadius="+1.0"
+      crs:SplitToningBalance="0"
+      crs:SplitToningHighlightHue="0"
+      crs:SplitToningHighlightSaturation="0"
+      crs:SplitToningShadowHue="0"
+      crs:SplitToningShadowSaturation="0"
+      crs:Tint="+6"
+      crs:ToneCurveName="Medium Contrast"
+      crs:ToneCurveName2012="Linear"
+      crs:Version="8.6"
+      crs:Vibrance="+17"
+      crs:VignetteAmount="0"
+      crs:Whites2012="+33"
+      dc:format="image/jpeg"
+      dc:rights="©gustavofrazao - stock.adobe.com"
+      exif:ApertureValue="6/1"
+      exif:ColorSpace="1"
+      exif:CustomRendered="0"
+      exif:DateTimeOriginal="2015-10-06T09:58:36.26"
+      exif:ExifVersion="0230"
+      exif:ExposureBiasValue="0/1"
+      exif:ExposureMode="1"
+      exif:ExposureProgram="1"
+      exif:ExposureTime="4/5"
+      exif:FNumber="8/1"
+      exif:FlashpixVersion="0100"
+      exif:FocalLength="70/1"
+      exif:FocalPlaneResolutionUnit="3"
+      exif:FocalPlaneXResolution="1600/1"
+      exif:FocalPlaneYResolution="1600/1"
+      exif:MaxApertureValue="24361/8200"
+      exif:MeteringMode="5"
+      exif:PixelXDimension="5144"
+      exif:PixelYDimension="3269"
+      exif:Saturation="1"
+      exif:SceneCaptureType="0"
+      exif:Sharpness="2"
+      exif:ShutterSpeedValue="6859/21306"
+      exif:WhiteBalance="1"
+      exifEX:BodySerialNumber="268021005274"
+      exifEX:LensModel="EF24-70mm f/2.8L II USM"
+      exifEX:LensSerialNumber="1025000518"
+      exifEX:PhotographicSensitivity="100"
+      exifEX:RecommendedExposureIndex="100"
+      exifEX:SensitivityType="2"
+      photoshop:ColorMode="3"
+      photoshop:DateCreated="2015-10-06T09:58:36+00:00"
+      photoshop:History="HASH(0x2008d88), HASH(0x2008b30), HASH(0x2008908), HASH(0x2008638), HASH(0x20085c0), HASH(0x2008758), HASH(0x2008650), HASH(0x2008560), HASH(0x2008710), HASH(0x2008518), HASH(0x20087e8), HASH(0x2008470)"
+      photoshop:ICCProfile="sRGB IEC61966-2.1"
+      photoshop:LegacyIPTCDigest="70A68C6C45F97EDAD182F248B9BE2353"
+      photoshop:Source="99648740"
+      photoshop:Credit="gustavofrazao - stock.adobe.com"
+      photoshop:Country="Brazil"
+      tiff:Make="Canon"
+      tiff:Model="Canon EOS 5D Mark III"
+      tiff:Orientation="1"
+      tiff:ResolutionUnit="2"
+      tiff:XResolution="300/1"
+      tiff:YCbCrPositioning="1"
+      tiff:YResolution="300/1"
+      tiff:ImageWidth="5144"
+      tiff:ImageLength="3269"
+      xmp:CreateDate="2015-10-06T09:58:36.26"
+      xmp:CreatorTool="Adobe Photoshop CC (Macintosh)"
+      xmp:MetadataDate="2015-10-21T18:14:16-02:00"
+      xmp:ModifyDate="2015-10-21T18:14:16.26"
+      xmp:Rating="0"
+      xmpMM:DocumentID="xmp.did:f9335df0-523a-4456-b325-4593c318ae87"
+      xmpMM:InstanceID="xmp.iid:8a61db47-a2e0-4fe4-bb64-e9f90e50631f"
+      xmpMM:OriginalDocumentID="1839DDA5B2ABBE48CA767951E4C956B2"
+      dam:Physicalwidthindpi="300"
+      dam:MIMEtype="image/jpeg"
+      dam:Physicalheightininches="10.896666526794434"
+      dam:Physicalheightindpi="300"
+      dam:Physicalwidthininches="17.14666748046875"
+      dam:Bitsperpixel="24"
+      dam:Progressive="no"
+      dam:size="4544561"
+      dam:Numberoftextualcomments="0"
+      dam:sha1="00eefabda77f9cfd8d0a19f89dc933a73deb2a2c"
+      dam:Numberofimages="1"
+      dam:TimeCreated="095836+0000"
+      dam:Fileformat="JPEG">
+      <crs:ToneCurve>
+        <rdf:Seq>
+          <rdf:li>0, 0</rdf:li>
+          <rdf:li>32, 22</rdf:li>
+          <rdf:li>64, 56</rdf:li>
+          <rdf:li>128, 128</rdf:li>
+          <rdf:li>192, 196</rdf:li>
+          <rdf:li>255, 255</rdf:li>
+        </rdf:Seq>
+      </crs:ToneCurve>
+      <crs:ToneCurveBlue>
+        <rdf:Seq>
+          <rdf:li>0, 0</rdf:li>
+          <rdf:li>255, 255</rdf:li>
+        </rdf:Seq>
+      </crs:ToneCurveBlue>
+      <crs:ToneCurveGreen>
+        <rdf:Seq>
+          <rdf:li>0, 0</rdf:li>
+          <rdf:li>255, 255</rdf:li>
+        </rdf:Seq>
+      </crs:ToneCurveGreen>
+      <crs:ToneCurvePV2012>
+        <rdf:Seq>
+          <rdf:li>0, 0</rdf:li>
+          <rdf:li>255, 255</rdf:li>
+        </rdf:Seq>
+      </crs:ToneCurvePV2012>
+      <crs:ToneCurvePV2012Blue>
+        <rdf:Seq>
+          <rdf:li>0, 0</rdf:li>
+          <rdf:li>255, 255</rdf:li>
+        </rdf:Seq>
+      </crs:ToneCurvePV2012Blue>
+      <crs:ToneCurvePV2012Green>
+        <rdf:Seq>
+          <rdf:li>0, 0</rdf:li>
+          <rdf:li>255, 255</rdf:li>
+        </rdf:Seq>
+      </crs:ToneCurvePV2012Green>
+      <crs:ToneCurvePV2012Red>
+        <rdf:Seq>
+          <rdf:li>0, 0</rdf:li>
+          <rdf:li>255, 255</rdf:li>
+        </rdf:Seq>
+      </crs:ToneCurvePV2012Red>
+      <crs:ToneCurveRed>
+        <rdf:Seq>
+          <rdf:li>0, 0</rdf:li>
+          <rdf:li>255, 255</rdf:li>
+        </rdf:Seq>
+      </crs:ToneCurveRed>
+      <dc:title>
+        <rdf:Alt>
+          <rdf:li xml:lang="x-default">Earn Points written on a wooden cube in a office desk</rdf:li>
+        </rdf:Alt>
+      </dc:title>
+      <dc:subject>
+        <rdf:Bag>
+          <rdf:li>earn</rdf:li>
+          <rdf:li>points</rdf:li>
+          <rdf:li>loyalty</rdf:li>
+          <rdf:li>program</rdf:li>
+          <rdf:li>reward</rdf:li>
+          <rdf:li>point</rdf:li>
+          <rdf:li>card</rdf:li>
+          <rdf:li>credit</rdf:li>
+          <rdf:li>money</rdf:li>
+          <rdf:li>loan</rdf:li>
+          <rdf:li>debt</rdf:li>
+          <rdf:li>choose</rdf:li>
+          <rdf:li>buy</rdf:li>
+          <rdf:li>better</rdf:li>
+          <rdf:li>collect</rdf:li>
+          <rdf:li>benefit</rdf:li>
+          <rdf:li>budgeting</rdf:li>
+          <rdf:li>loaning</rdf:li>
+          <rdf:li>best</rdf:li>
+          <rdf:li>spend</rdf:li>
+          <rdf:li>budget</rdf:li>
+          <rdf:li>choice</rdf:li>
+          <rdf:li>borrow</rdf:li>
+          <rdf:li>business</rdf:li>
+          <rdf:li>sales</rdf:li>
+          <rdf:li>impetus</rdf:li>
+          <rdf:li>temptation</rdf:li>
+          <rdf:li>save</rdf:li>
+          <rdf:li>persuasion</rdf:li>
+          <rdf:li>rewarding</rdf:li>
+          <rdf:li>bonus</rdf:li>
+          <rdf:li>marketing</rdf:li>
+          <rdf:li>gift</rdf:li>
+          <rdf:li>premium</rdf:li>
+          <rdf:li>incentive</rdf:li>
+          <rdf:li>text</rdf:li>
+          <rdf:li>stimulus</rdf:li>
+          <rdf:li>influence</rdf:li>
+          <rdf:li>encouragement</rdf:li>
+          <rdf:li>persuasive</rdf:li>
+          <rdf:li>persuade</rdf:li>
+          <rdf:li>loyal</rdf:li>
+          <rdf:li>offer</rdf:li>
+          <rdf:li>sell</rdf:li>
+          <rdf:li>special</rdf:li>
+          <rdf:li>advertise</rdf:li>
+          <rdf:li>shopper</rdf:li>
+          <rdf:li>ecommerce</rdf:li>
+          <rdf:li>cubes</rdf:li>
+          <rdf:li>concept</rdf:li>
+        </rdf:Bag>
+      </dc:subject>
+      <dc:date>
+        <rdf:Bag>
+          <rdf:li>20151006</rdf:li>
+        </rdf:Bag>
+      </dc:date>
+      <exif:ISOSpeedRatings>
+        <rdf:Seq>
+          <rdf:li>100</rdf:li>
+        </rdf:Seq>
+      </exif:ISOSpeedRatings>
+      <exif:ComponentsConfiguration>
+        <rdf:Seq>
+          <rdf:li>1</rdf:li>
+          <rdf:li>2</rdf:li>
+          <rdf:li>3</rdf:li>
+          <rdf:li>0</rdf:li>
+        </rdf:Seq>
+      </exif:ComponentsConfiguration>
+      <exifEX:LensSpecification>
+        <rdf:Seq>
+          <rdf:li>24/1</rdf:li>
+          <rdf:li>70/1</rdf:li>
+          <rdf:li>0/0</rdf:li>
+          <rdf:li>0/0</rdf:li>
+        </rdf:Seq>
+      </exifEX:LensSpecification>
+      <photoshop:TextLayers>
+        <rdf:Seq>
+          <rdf:li
+            photoshop:LayerName="S"
+            photoshop:LayerText="S"/>
+          <rdf:li
+            photoshop:LayerName="T"
+            photoshop:LayerText="T"/>
+          <rdf:li
+            photoshop:LayerName="N"
+            photoshop:LayerText="N"/>
+          <rdf:li
+            photoshop:LayerName="I"
+            photoshop:LayerText="I"/>
+          <rdf:li
+            photoshop:LayerName="O"
+            photoshop:LayerText="O"/>
+          <rdf:li
+            photoshop:LayerName="P"
+            photoshop:LayerText="P"/>
+          <rdf:li
+            photoshop:LayerName="N"
+            photoshop:LayerText="N"/>
+          <rdf:li
+            photoshop:LayerName="R"
+            photoshop:LayerText="R"/>
+          <rdf:li
+            photoshop:LayerName="A"
+            photoshop:LayerText="A"/>
+          <rdf:li
+            photoshop:LayerName="E"
+            photoshop:LayerText="E"/>
+        </rdf:Seq>
+      </photoshop:TextLayers>
+      <xmpMM:DerivedFrom
+        stRef:documentID="xmp.did:f9335df0-523a-4456-b325-4593c318ae87"
+        stRef:instanceID="xmp.iid:6c9f27fa-cf29-4277-92dc-3e63ee3f7d24"
+        stRef:originalDocumentID="1839DDA5B2ABBE48CA767951E4C956B2"/>
+      <xmpMM:History>
+        <rdf:Seq>
+          <rdf:li
+            stEvt:action="converted"
+            stEvt:parameters="from image/x-canon-cr2 to image/dng"/>
+          <rdf:li
+            stEvt:action="saved"
+            stEvt:changed="/metadata"
+            stEvt:instanceID="xmp.iid:c6ec5490-0838-4c86-976e-f971b79183d0"
+            stEvt:softwareAgent="Adobe Photoshop Lightroom 6.0 (Macintosh)"
+            stEvt:when="2015-10-04T12:05:51-03:00"/>
+          <rdf:li
+            stEvt:action="derived"
+            stEvt:parameters="converted from image/dng to image/tiff"/>
+          <rdf:li
+            stEvt:action="saved"
+            stEvt:changed="/"
+            stEvt:instanceID="xmp.iid:f9335df0-523a-4456-b325-4593c318ae87"
+            stEvt:softwareAgent="Adobe Photoshop Camera Raw 8.6 (Macintosh)"
+            stEvt:when="2015-10-04T12:41:53-03:00"/>
+          <rdf:li
+            stEvt:action="saved"
+            stEvt:changed="/"
+            stEvt:instanceID="xmp.iid:56af91c9-60a8-44ca-bd7e-974ff294d47e"
+            stEvt:softwareAgent="Adobe Photoshop CC (Macintosh)"
+            stEvt:when="2015-10-04T12:45:38-03:00"/>
+          <rdf:li
+            stEvt:action="converted"
+            stEvt:parameters="from image/tiff to application/vnd.adobe.photoshop"/>
+          <rdf:li
+            stEvt:action="derived"
+            stEvt:parameters="converted from image/tiff to application/vnd.adobe.photoshop"/>
+          <rdf:li
+            stEvt:action="saved"
+            stEvt:changed="/"
+            stEvt:instanceID="xmp.iid:b9b74630-c52f-47ea-81b1-42a769f4e1bb"
+            stEvt:softwareAgent="Adobe Photoshop CC (Macintosh)"
+            stEvt:when="2015-10-04T12:45:38-03:00"/>
+          <rdf:li
+            stEvt:action="saved"
+            stEvt:changed="/"
+            stEvt:instanceID="xmp.iid:6c9f27fa-cf29-4277-92dc-3e63ee3f7d24"
+            stEvt:softwareAgent="Adobe Photoshop CC (Macintosh)"
+            stEvt:when="2015-10-21T18:14:16-02:00"/>
+          <rdf:li
+            stEvt:action="converted"
+            stEvt:parameters="from application/vnd.adobe.photoshop to image/jpeg"/>
+          <rdf:li
+            stEvt:action="derived"
+            stEvt:parameters="converted from application/vnd.adobe.photoshop to image/jpeg"/>
+          <rdf:li
+            stEvt:action="saved"
+            stEvt:changed="/"
+            stEvt:instanceID="xmp.iid:8a61db47-a2e0-4fe4-bb64-e9f90e50631f"
+            stEvt:softwareAgent="Adobe Photoshop CC (Macintosh)"
+            stEvt:when="2015-10-21T18:14:16-02:00"/>
+        </rdf:Seq>
+      </xmpMM:History>
+      <pur:creditLine>
+        <rdf:Bag>
+          <rdf:li>gustavofrazao - stock.adobe.com</rdf:li>
+        </rdf:Bag>
+      </pur:creditLine>
+    </rdf:Description>
+  </rdf:RDF>
+</x:xmpmeta>

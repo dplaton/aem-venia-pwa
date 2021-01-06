@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="3749bcdf-4716-413e-9eea-0d514e513bd3">
+    <jcr:content
+        cq:name="998"
+        cq:parentPath="/content/dam/venia/offers"
+        jcr:description="October Sale"
+        jcr:lastModified="{Date}2020-09-12T13:41:41.078Z"
+        jcr:lastModifiedBy="MSZULC@ADOBE.COM"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="998"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2020-09-12T13:41:41.078Z">
+        <comments
+            jcr:created="{Date}2020-09-06T11:00:59.937Z"
+            jcr:createdBy="MSZULC@ADOBE.COM"
+            jcr:lastModified="{Date}2020-09-06T11:00:59.974Z"
+            jcr:lastModifiedBy="MSZULC@ADOBE.COM"
+            jcr:mixinTypes="[mix:lastModified]"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/comments/components/collection">
+            <awesome_
+                jcr:created="{Date}2020-09-06T11:00:59.974Z"
+                jcr:createdBy="MSZULC@ADOBE.COM"
+                jcr:description="Awesome!"
+                jcr:lastModified="{Date}2020-09-06T11:00:59.974Z"
+                jcr:lastModifiedBy="MSZULC@ADOBE.COM"
+                jcr:mixinTypes="[mix:lastModified]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/comments/components/comment"
+                author="MSZULC@ADOBE.COM"/>
+        </comments>
+        <data
+            cq:model="/conf/venia/settings/dam/cfm/models/article"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                Main="&lt;p>Fancy new sale now on.&lt;/p>&#xa;"
+                Main_x0040_ContentType="text/html"
+                Main_x0040_LastModified="{Date}2020-09-06T10:59:08.343Z"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

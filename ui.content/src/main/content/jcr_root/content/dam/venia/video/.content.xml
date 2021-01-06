@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:lastModified="{Date}2020-09-08T05:14:23.967Z"
+    jcr:lastModifiedBy="MSZULC@ADOBE.COM"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="sling:Folder">
+    <jcr:content
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Video"
+        autotag="{Boolean}true"
+        dmpublish-mode=""
+        s7-sync-mode="include"
+        sourcing="false"
+        videoProfile="/libs/settings/dam/dm/presets/video/Adaptive_Video_Encoding">
+        <folderThumbnail/>
+    </jcr:content>
+</jcr:root>

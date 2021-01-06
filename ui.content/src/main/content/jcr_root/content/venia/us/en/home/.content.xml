@@ -29,7 +29,7 @@
                     pretitle="Shop the New Outerwear Collection"
                     textIsRich="true"
                     titleFromPage="false"/>
-                <productteaser
+                <productteaser 
                     jcr:created="{Date}2020-12-18T11:47:15.416+02:00"
                     jcr:createdBy="admin"
                     jcr:lastModified="{Date}2020-12-18T11:47:46.928+02:00"

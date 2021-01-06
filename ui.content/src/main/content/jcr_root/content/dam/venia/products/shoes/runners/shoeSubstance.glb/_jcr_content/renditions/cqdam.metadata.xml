@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 6.2.4">
+  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <rdf:Description rdf:about=""
+        xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/"
+        xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+        xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"
+        xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#"
+        xmlns:dam="http://www.day.com/dam/1.0"
+        xmlns:dc="http://purl.org/dc/elements/1.1/"
+      photoshop:ColorMode="3"
+      photoshop:ICCProfile="sRGB IEC61966-2.1"
+      xmp:CreateDate="2019-07-16T20:18:10-07:00"
+      xmp:CreatorTool="Adobe Photoshop CC 2019 (Windows)"
+      xmp:MetadataDate="2019-07-16T20:18:39-07:00"
+      xmp:ModifyDate="2019-07-16T20:18:39-07:00"
+      xmpMM:DocumentID="adobe:docid:photoshop:66c0596a-0959-c541-80ac-5607cea374d0"
+      xmpMM:InstanceID="xmp.iid:9cf7333d-0e38-f547-87fb-78c1c239fd17"
+      xmpMM:OriginalDocumentID="xmp.did:38082205-756b-a048-8e46-d70ca9fd7c1e"
+      dam:size="21289868"
+      dam:sha1="33b7d07f13ebf70dba0c83a7c3846e3d89a1081a"
+      dam:interactive3DAsset="True"
+      dc:format="model/gltf-binary">
+      <xmpMM:History>
+        <rdf:Seq>
+          <rdf:li
+            stEvt:action="created"
+            stEvt:instanceID="xmp.iid:38082205-756b-a048-8e46-d70ca9fd7c1e"
+            stEvt:softwareAgent="Adobe Photoshop CC 2019 (Windows)"
+            stEvt:when="2019-07-16T20:18:10-07:00"/>
+          <rdf:li
+            stEvt:action="converted"
+            stEvt:parameters="from image/png to image/jpeg"/>
+          <rdf:li
+            stEvt:action="saved"
+            stEvt:changed="/"
+            stEvt:instanceID="xmp.iid:9cf7333d-0e38-f547-87fb-78c1c239fd17"
+            stEvt:softwareAgent="Adobe Photoshop CC 2019 (Windows)"
+            stEvt:when="2019-07-16T20:18:39-07:00"/>
+        </rdf:Seq>
+      </xmpMM:History>
+    </rdf:Description>
+  </rdf:RDF>
+</x:xmpmeta>
