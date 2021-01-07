@@ -1,23 +1,27 @@
 import { string } from 'prop-types';
 import React from 'react';
 
+import ActionItem from './actionItem';
 import classes from './contentTeaser.css';
 
 const ContentTeaser = props => {
-    console.log(`Got props `, props);
-    const { description, title, imageUrl, actionsEnabled } = props;
+    const {
+        description,
+        title,
+        actionsEnabled,
+        imageResource,
+        actions
+    } = props;
+
+    const { fileReference } = imageResource;
+
     return (
         <div className="teaser">
-            <div id="teaser-ce1681cc6a" className="cmp-teaser">
+            <div id="teaser" className="cmp-teaser">
                 <div className={classes.image}>
-                    <div
-                        id="image-ce1681cc6a"
-                        className="cmp-image"
-                        itemScope=""
-                        itemType="http://schema.org/ImageObject"
-                    >
+                    <div className="cmp-image">
                         <img
-                            src={imageUrl}
+                            src={`${AEM_URL}/${fileReference}`}
                             className={classes.image}
                             itemProp="contentUrl"
                             data-cmp-hook-image="image"
@@ -27,26 +31,16 @@ const ContentTeaser = props => {
                     </div>
                 </div>
                 <div className={classes.content}>
-                    <h2 className={classes.title}>
-                        <a
-                            className="cmp-teaser__title-link"
-                            href="/content/core-components-examples/library/teaser.html"
-                        >
-                            {title}
-                        </a>
-                    </h2>
+                    <h2 className={classes.title}>{title}</h2>
                     <div className={classes.description}>
                         <p>{description}</p>
                     </div>
-                    {actionsEnabled && (
-                        <a
-                            className={classes.actionLink}
-                            href="http://google.com"
-                            data-cmp-clickable=""
-                        >
-                            TODO change me
-                        </a>
-                    )}
+                    {actionsEnabled &&
+                        actions.map(action => {
+                            return (
+                                <ActionItem key={action.title} {...action} />
+                            );
+                        })}
                 </div>
             </div>
         </div>
