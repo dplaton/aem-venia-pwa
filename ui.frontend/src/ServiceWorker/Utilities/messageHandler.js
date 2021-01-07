@@ -1,12 +1,16 @@
-/**
- * handlers is an object that holds all the message
- * handlers for the client messages. Key is the
- * type of the message and value is an array of handlers.
+/*******************************************************************************
  *
- * When a message arrives from the client, the
- * message's type will be used to get the list of handlers
- * that need to be invoked from the handlers object.
- */
+ *    Copyright 2020 Adobe. All rights reserved.
+ *    This file is licensed to you under the Apache License, Version 2.0 (the "License");
+ *    you may not use this file except in compliance with the License. You may obtain a copy
+ *    of the License at http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *    Unless required by applicable law or agreed to in writing, software distributed under
+ *    the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+ *    OF ANY KIND, either express or implied. See the License for the specific language
+ *    governing permissions and limitations under the License.
+ *
+ ******************************************************************************/
 const handlers = {};
 
 /**
