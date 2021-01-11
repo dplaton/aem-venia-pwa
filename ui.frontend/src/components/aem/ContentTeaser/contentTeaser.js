@@ -61,7 +61,9 @@ const ContentTeaser = props => {
                 <div className={classes.content}>
                     <h2 className={classes.title}>{title}</h2>
                     <div className={classes.description}>
-                        <p>{description}</p>
+                        <div
+                            dangerouslySetInnerHTML={{ __html: description }}
+                        />
                     </div>
                     {actionsEnabled &&
                         actions.map(action => {
