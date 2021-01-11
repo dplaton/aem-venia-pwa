@@ -21,6 +21,8 @@ import {
 import Text, { TextEditConfig } from '../aem/Text';
 import ProductTeaser, { ProductTeaserEditConfig } from '../aem/ProductTeaser';
 import ContentTeaser from '../aem/ContentTeaser';
+import FeaturedCategories from '../aem/FeaturedCategories';
+import { ContentTeaserEditConfig } from '../aem/ContentTeaser/contentTeaser';
 
 const AemPage = props => {
     return <Page {...props} />;
@@ -40,4 +42,10 @@ MapTo('venia/components/container')(ResponsiveGrid, {
     },
     resourceType: 'venia/components/container'
 });
-MapTo('core/cif/components/content/teaser/v1/teaser')(ContentTeaser);
+MapTo('core/cif/components/content/teaser/v1/teaser')(
+    ContentTeaser,
+    ContentTeaserEditConfig
+);
+MapTo('core/cif/components/content/featuredcategories/v1/featuredcategories')(
+    FeaturedCategories
+);

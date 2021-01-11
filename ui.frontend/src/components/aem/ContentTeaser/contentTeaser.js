@@ -17,30 +17,45 @@ import React from 'react';
 import ActionItem from './actionItem';
 import classes from './contentTeaser.css';
 
-const ContentTeaser = props => {
-    const {
-        description,
-        title,
-        actionsEnabled,
-        imageResource,
-        actions
-    } = props;
+export const ContentTeaserEditConfig = {
+    emptyLabel: 'Teaser',
+    isEmpty: props => {
+        if (props.actions && props.actions.length > 0) {
+            return false;
+        }
 
-    const { fileReference } = imageResource;
+        if (props.imageResource) {
+            return false;
+        }
+
+        if (props.title || props.pretitle || props.description) {
+            return false;
+        }
+
+        return true;
+    }
+};
+
+const ContentTeaser = props => {
+    const { description, title, actionsEnabled, actions } = props;
+
+    const fileReference = props?.imageResource?.fileReference;
 
     return (
         <div className="teaser">
             <div id="teaser" className="cmp-teaser">
                 <div className={classes.image}>
                     <div className="cmp-image">
-                        <img
-                            src={`${AEM_URL}/${fileReference}`}
-                            className={classes.image}
-                            itemProp="contentUrl"
-                            data-cmp-hook-image="image"
-                            alt={title}
-                            title={title}
-                        />
+                        {fileReference && (
+                            <img
+                                src={`${AEM_URL}/${fileReference}`}
+                                className={classes.image}
+                                itemProp="contentUrl"
+                                data-cmp-hook-image="image"
+                                alt={title}
+                                title={title}
+                            />
+                        )}
                     </div>
                 </div>
                 <div className={classes.content}>
