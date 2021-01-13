@@ -23,6 +23,7 @@ import ProductTeaser, { ProductTeaserEditConfig } from '../aem/ProductTeaser';
 import ContentTeaser from '../aem/ContentTeaser';
 import FeaturedCategories from '../aem/FeaturedCategories';
 import { ContentTeaserEditConfig } from '../aem/ContentTeaser/contentTeaser';
+import { FeaturedCategoriesEditConfig } from '../aem/FeaturedCategories/featuredCategories';
 
 const AemPage = props => {
     return <Page {...props} />;
@@ -46,6 +47,6 @@ MapTo('core/cif/components/content/teaser/v1/teaser')(
     ContentTeaser,
     ContentTeaserEditConfig
 );
-MapTo('core/cif/components/content/featuredcategories/v1/featuredcategories')(
-    FeaturedCategories
-);
+MapTo(
+    'core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist'
+)(FeaturedCategories, FeaturedCategoriesEditConfig);
