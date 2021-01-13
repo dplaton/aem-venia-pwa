@@ -11,7 +11,7 @@
  *    governing permissions and limitations under the License.
  *
  ******************************************************************************/
-import { string } from 'prop-types';
+import { array, bool, string } from 'prop-types';
 import React from 'react';
 
 import ActionItem from './actionItem';
@@ -24,7 +24,7 @@ export const ContentTeaserEditConfig = {
             return false;
         }
 
-        if (props.imageResource) {
+        if (props.assetPath) {
             return false;
         }
 
@@ -39,16 +39,16 @@ export const ContentTeaserEditConfig = {
 const ContentTeaser = props => {
     const { description, title, actionsEnabled, actions } = props;
 
-    const fileReference = props?.imageResource?.fileReference;
+    const assetPath = props?.assetPath;
 
     return (
         <div className="teaser">
             <div id="teaser" className="cmp-teaser">
                 <div className={classes.image}>
                     <div className="cmp-image">
-                        {fileReference && (
+                        {assetPath && (
                             <img
-                                src={`${AEM_URL}/${fileReference}`}
+                                src={`${AEM_URL}/${assetPath}`}
                                 className={classes.image}
                                 itemProp="contentUrl"
                                 data-cmp-hook-image="image"
@@ -78,6 +78,8 @@ const ContentTeaser = props => {
 };
 
 ContentTeaser.propTypes = {
+    actionsEnabled: bool,
+    actions: array,
     description: string,
     title: string
 };
