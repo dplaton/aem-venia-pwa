@@ -13,7 +13,7 @@
  ******************************************************************************/
 import React from 'react';
 import { useQuery } from '@apollo/client';
-import { array, arrayOf, bool, shape, string } from 'prop-types';
+import { any, arrayOf, bool, shape, string } from 'prop-types';
 
 import LoadingIndicator from '@magento/venia-ui/lib/components/LoadingIndicator';
 
@@ -38,7 +38,7 @@ const FeaturedCategories = props => {
 
     const { data, loading, error } = useQuery(getCategoryByIds, {
         variables: {
-            ids: categoryItems.map(item => item.categoryId)
+            ids: categoryItems.map(item => item.categoryIdentifier.value)
         }
     });
 
@@ -58,7 +58,7 @@ const FeaturedCategories = props => {
 
     const getOverlayImage = id => {
         const item = categoryItems.find(
-            item => item.categoryId === id.toString()
+            item => item.categoryIdentifier.value === id.toString()
         );
         return item && item.assetPath !== null
             ? `${AEM_URL}${item.assetPath}`
@@ -88,7 +88,14 @@ const FeaturedCategories = props => {
 
 FeaturedCategories.propTypes = {
     categoryItems: arrayOf(
-        shape({ categoryId: string.isRequired, assetPath: string })
+        shape({
+            categoryIdentifier: shape({
+                type: string.isRequired,
+                value: any.isRequired,
+                entityType: string.isRequired
+            }).isRequired,
+            assetPath: string
+        })
     ),
     title: string,
     configured: bool
