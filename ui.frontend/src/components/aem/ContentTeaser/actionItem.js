@@ -12,12 +12,13 @@
  *
  ******************************************************************************/
 import React, { useEffect, useState } from 'react';
-import Button from '@magento/venia-ui/lib/components/Button';
+import { string, shape } from 'prop-types';
 import { useLazyQuery } from '@apollo/client';
-import getCategoryById from './getCategoryById.graphql';
+import Button from '@magento/venia-ui/lib/components/Button';
 
+import getCategoryById from './getCategoryById.graphql';
 const ActionItem = props => {
-    const { title } = props;
+    const { title, entityIdentifier } = props;
 
     const [runCategoryQuery, result] = useLazyQuery(getCategoryById);
     const { data } = result;
@@ -25,10 +26,10 @@ const ActionItem = props => {
     const [actionUrl, setActionUrl] = useState('#');
 
     useEffect(() => {
-        if (props.categoryId) {
-            runCategoryQuery({ variables: { id: props.categoryId } });
+        if (entityIdentifier && entityIdentifier.entityType === 'CATEGORY') {
+            runCategoryQuery({ variables: { id: entityIdentifier.value } });
         }
-    }, [props.categoryId, runCategoryQuery]);
+    }, [entityIdentifier, runCategoryQuery]);
 
     useEffect(() => {
         if (data && data.category) {
@@ -38,10 +39,10 @@ const ActionItem = props => {
     }, [data]);
 
     useEffect(() => {
-        if (props.productSlug) {
-            setActionUrl(`/${props.productSlug}.html`);
+        if (entityIdentifier && entityIdentifier.entityType === 'PRODUCT') {
+            setActionUrl(`/${entityIdentifier.value}.html`);
         }
-    }, [props.productSlug]);
+    }, [entityIdentifier]);
 
     return (
         <Button
@@ -51,6 +52,15 @@ const ActionItem = props => {
             {title}
         </Button>
     );
+};
+
+ActionItem.propTypes = {
+    title: string,
+    entityIdentifier: shape({
+        entityType: string.isRequired,
+        type: string.isRequired,
+        value: string.isRequired
+    })
 };
 
 export default ActionItem;
