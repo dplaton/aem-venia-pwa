@@ -18,7 +18,7 @@ import { useScrollLock } from '@magento/peregrine';
 import { mergeClasses } from '@magento/venia-ui/lib/classify';
 import Header from '@magento/venia-ui/lib/components/Header';
 import Footer from '@magento/venia-ui/lib/components/Footer';
-import defaultClasses from '@magento/venia-ui/lib/components/Main/main.css';
+import defaultClasses from './main.css';
 
 const Main = props => {
     const { children, isMasked } = props;
