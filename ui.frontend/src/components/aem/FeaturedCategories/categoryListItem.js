@@ -17,7 +17,6 @@ import React from 'react';
 import classes from './featuredCategories.css';
 
 const CategoryListItem = ({ url_path, name, image, assetPath }) => {
-    console.log(`Got image? `, image);
     const imageSrc = assetPath ? assetPath : image;
 
     return (

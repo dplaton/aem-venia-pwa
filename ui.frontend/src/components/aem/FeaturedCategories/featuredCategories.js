@@ -24,9 +24,7 @@ import classes from './featuredCategories.css';
 export const FeaturedCategoriesEditConfig = {
     emptyLabel: 'Featured categories',
     isEmpty: props => {
-        console.log(`FeaturedCategories component got props `, props);
         const isEmpty = props.categoryItems.length === 0;
-        console.log(isEmpty);
         return isEmpty;
     },
     resourceType:
@@ -49,7 +47,6 @@ const FeaturedCategories = props => {
     let categories = [];
     if (data && data.categories) {
         categories = data.categories.items;
-        console.log(categories);
     }
 
     if (!props.configured) {
@@ -72,7 +69,6 @@ const FeaturedCategories = props => {
             </div>
             <div className={classes.content}>
                 {categories.map(item => {
-                    console.log(`Rendering `, item);
                     return (
                         <CategoryListItem
                             key={item.id}
