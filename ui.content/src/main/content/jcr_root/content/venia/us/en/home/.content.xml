@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2021-01-11T11:30:58.437+02:00"
+        cq:lastModified="{Date}2021-01-13T13:19:34.498+02:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/venia/settings/wcm/templates/spa-page-template"
         jcr:primaryType="cq:PageContent"
@@ -19,11 +19,12 @@
                     jcr:created="{Date}2021-01-11T10:41:26.905+02:00"
                     jcr:createdBy="admin"
                     jcr:description="&lt;p>Fall is almost here! Checkout the latest styles in outerwear.&lt;/p>&#xd;&#xa;"
-                    jcr:lastModified="{Date}2021-01-11T11:30:58.429+02:00"
+                    jcr:lastModified="{Date}2021-01-13T13:19:34.493+02:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    jcr:title="Shop the new outerwear collection"
+                    jcr:title="Shop the New Outerwear Collection"
                     sling:resourceType="venia/components/commerce/teaser"
+                    cq:styleIds="[1598234829044]"
                     actionsEnabled="true"
                     descriptionFromPage="false"
                     fileReference="/content/dam/venia/temp/venia-hero1.jpg"
@@ -32,81 +33,60 @@
                     <actions jcr:primaryType="nt:unstructured">
                         <item0
                             jcr:primaryType="nt:unstructured"
-                            text="Shop now"/>
+                            productSlug="zoe-tank"
+                            text="Shop this product"/>
                     </actions>
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="12"/>
+                    </cq:responsive>
                 </teaser>
-                <productteaser
-                    jcr:created="{Date}2020-12-18T11:47:15.416+02:00"
+                <featuredcategorylist
+                    jcr:created="{Date}2021-01-13T10:41:02.693+02:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-12-18T11:47:46.928+02:00"
+                    jcr:lastModified="{Date}2021-01-13T11:11:37.564+02:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="venia/components/commerce/productteaser"
-                    age="{Long}10"
-                    badge="false"
-                    cta="details"
-                    ctaText="See more details"
-                    selection="WJ08#WJ08-L-Orange"
-                    text="New">
-                    <cq:responsive jcr:primaryType="nt:unstructured">
-                        <default
+                    jcr:title="Shop by category"
+                    sling:resourceType="venia/components/commerce/featuredcategorylist">
+                    <items jcr:primaryType="nt:unstructured">
+                        <item0
                             jcr:primaryType="nt:unstructured"
-                            offset="0"
-                            width="4"/>
-                    </cq:responsive>
-                </productteaser>
-                <productteaser_1758029211
-                    jcr:created="{Date}2020-12-18T11:47:55.300+02:00"
+                            asset="/content/dam/venia/temp/shallow-focus-photography-of-man-wearing-eyeglasses-837306_sm.jpg"
+                            categoryId="14"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            categoryId="19"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            categoryId="16"/>
+                    </items>
+                </featuredcategorylist>
+                <teaser_1712198397
+                    jcr:created="{Date}2021-01-13T12:28:18.939+02:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-12-18T11:48:24.459+02:00"
+                    jcr:description="&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor labore&lt;br />&#xd;&#xa;dolore magna lorem ipsum dolor sit dolore magna lorem ipsum dolor sit amet&lt;/p>&#xd;&#xa;"
+                    jcr:lastModified="{Date}2021-01-13T12:31:55.674+02:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="venia/components/commerce/productteaser"
-                    age="{Long}10"
-                    badge="false"
-                    cta="add-to-cart"
-                    ctaText="Buy this now!!"
-                    selection="MT12#MT12-L-Blue"
-                    text="New">
-                    <cq:responsive jcr:primaryType="nt:unstructured">
-                        <default
+                    jcr:title="Make a Statement"
+                    sling:resourceType="venia/components/commerce/teaser"
+                    actionsEnabled="true"
+                    descriptionFromPage="false"
+                    fileReference="/content/dam/venia/temp/AdobeStock_268178800_sm.jpg"
+                    textIsRich="true"
+                    titleFromPage="false">
+                    <actions jcr:primaryType="nt:unstructured">
+                        <item0
                             jcr:primaryType="nt:unstructured"
-                            offset="4"
-                            width="4"/>
-                    </cq:responsive>
-                </productteaser_1758029211>
-                <text_27963871
-                    jcr:created="{Date}2020-12-18T11:51:35.576+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-12-18T11:51:48.034+02:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="venia/components/text"
-                    text="&lt;p>&amp;lt;!-- start slipsum code --&amp;gt;&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.&lt;/p>&#xd;&#xa;"
-                    textIsRich="true">
-                    <cq:responsive jcr:primaryType="nt:unstructured">
-                        <default
+                            text="Shop heels"/>
+                        <item1
                             jcr:primaryType="nt:unstructured"
-                            offset="0"
-                            width="6"/>
-                    </cq:responsive>
-                </text_27963871>
-                <text
-                    jcr:created="{Date}2020-12-18T11:50:46.354+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-12-18T11:51:22.674+02:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="venia/components/text"
-                    text="&lt;p>My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand&lt;/p>&#xd;&#xa;"
-                    textIsRich="true">
-                    <cq:responsive jcr:primaryType="nt:unstructured">
-                        <default
-                            jcr:primaryType="nt:unstructured"
-                            offset="1"
-                            width="5"/>
-                    </cq:responsive>
-                </text>
+                            text="Shop all shoes"/>
+                    </actions>
+                </teaser_1712198397>
             </responsivegrid>
         </root>
     </jcr:content>

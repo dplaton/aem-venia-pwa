@@ -6,13 +6,25 @@
         jcr:primaryType="nt:unstructured"
         sling:resourceType="wcm/core/components/policies/mappings">
         <root
-            cq:policy="wcm/foundation/components/responsivegrid/default"
-            jcr:primaryType="nt:unstructured"
-            sling:resourceType="wcm/core/components/policies/mapping">
-            <responsivegrid
                 cq:policy="wcm/foundation/components/responsivegrid/default"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="wcm/core/components/policies/mapping"/>
+                sling:resourceType="wcm/core/components/policies/mapping">
+            <responsivegrid
+                    cq:policy="wcm/foundation/components/responsivegrid/default"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/core/components/policies/mapping">
+                <venia jcr:primaryType="nt:unstructured">
+                    <components jcr:primaryType="nt:unstructured">
+                        <commerce jcr:primaryType="nt:unstructured">
+                            <teaser jcr:primaryType="nt:unstructured"
+                                    cq:policy="venia/components/commerce/teaser/stylePolicy"
+                                    sling:resourceType="wcm/core/components/policies/mapping">
+                            </teaser>
+                        </commerce>
+                    </components>
+                </venia>
+            </responsivegrid>
+
         </root>
     </jcr:content>
 </jcr:root>

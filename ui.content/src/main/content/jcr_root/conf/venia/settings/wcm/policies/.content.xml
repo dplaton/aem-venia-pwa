@@ -402,6 +402,31 @@
                         </cq:styleGroups>
                     </default>
                 </productlist>
+                <teaser jcr:primaryType="nt:unstructured">
+                    <stylePolicy jcr:primaryType="nt:unstructured"
+                                 jcr:title="Venia - Teaser"
+                                 sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0 jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0 jcr:primaryType="nt:unstructured"
+                                           cq:styleClasses="cmp-teaser-banner"
+                                           cq:styleId="1598234697359"
+                                           cq:styleLabel="Banner"/>
+                                    <item1 jcr:primaryType="nt:unstructured"
+                                           cq:styleId="1598234698241"
+                                           cq:styleClasses="cmp-teaser-feature-left"
+                                           cq:styleLabel="Feature - Left"/>
+                                    <item2 jcr:primaryType="nt:unstructured"
+                                           cq:styleId="1598234699118"
+                                           cq:styleClasses="cmp-teaser-feature-right"
+                                           cq:styleLabel="Feature - Right"/>
+                                </cq:styles>
+                            </item0>
+                        </cq:styleGroups>
+                    </stylePolicy>
+                </teaser>
             </commerce>
         </components>
     </venia>
