@@ -15,8 +15,10 @@ const {
     configureWebpack,
     graphQL: { getMediaURL, getStoreConfigData, getPossibleTypes }
 } = require('@magento/pwa-buildpack');
-const { DefinePlugin } = require('webpack');
+const webpack = require('webpack');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
+
+// const RootComponentsPlugin = require('./src/RootComponentsPlugin');
 
 module.exports = async env => {
     const mediaUrl = await getMediaURL();
@@ -58,13 +60,14 @@ module.exports = async env => {
      * https://webpack.js.org/configuration/module/#modulenoparse
      */
     config.module.noParse = [/braintree\-web\-drop\-in/];
-    config.output = {
-        ...config.output,
-        jsonpFunction: `webpackJsonpVenia`
-    };
+
     config.plugins = [
         ...config.plugins,
-        new DefinePlugin({
+        // for AEM development we limit the build to only one chunk
+        new webpack.optimize.LimitChunkCountPlugin({
+            maxChunks: 1
+        }),
+        new webpack.DefinePlugin({
             /**
              * Make sure to add the same constants to
              * the globals object in jest.config.js.

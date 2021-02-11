@@ -30,6 +30,7 @@
     "@magento/venia-drivers": "src/drivers"
   },
   "dependencies": {
+    "react-slick": "^0.27.14",
     "@adobe/aem-react-editable-components": "~1.1.1",
     "@adobe/aem-spa-component-mapping": "^1.0.7",
     "@adobe/aem-spa-page-model-manager": "^1.2.4",
@@ -103,7 +104,6 @@
     "react-redux": "~7.1.1",
     "react-refresh": "0.8.3",
     "react-router-dom": "~5.1.0",
-    "react-slick": "~0.25.2",
     "react-tabs": "~3.0.0",
     "react-test-renderer": "~16.9.0",
     "redux": "~4.0.1",
