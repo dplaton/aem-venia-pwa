@@ -21,7 +21,7 @@ import {
 
 import { fullPageLoadingIndicator } from '@magento/venia-ui/lib/components/LoadingIndicator';
 
-import AemRoute from '../AemRoute';
+import AemRoute from '@adobe/aem-pwa-studio-extensions';
 
 const MESSAGES = new Map()
     .set(NOT_FOUND, 'That page could not be found. Please try again.')

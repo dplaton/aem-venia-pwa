@@ -1,6 +1,6 @@
 # AEM Venia PWA app
 
-This is a PWA Studio app renders the marketing content retrieved from AEM. It was created using PWA Studio 8.
+This is a PWA Studio app renders the marketing content retrieved from AEM. It was created using PWA Studio 9.
 
 For more details about how to configure and customize this app you can also refer to the [PWA Studio](https://pwastudio.io) official documentation
 

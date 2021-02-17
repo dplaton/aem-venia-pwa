@@ -31,7 +31,7 @@ import { AppContextProvider } from '@magento/venia-ui/lib/components/App';
 import App from './components/App';
 import { registerSW } from './registerSW';
 import store from './store';
-import { AemClient } from './AemClient';
+import { AemClient } from '@adobe/aem-pwa-studio-extensions';
 import './aemgrid.css';
 const { BrowserPersistence } = Util;
 
@@ -129,7 +129,14 @@ const apolloLink = ApolloLink.from([
     Adapter.apolloLink(apiBase)
 ]);
 
-const modelClient = new AemClient(AEM_URL);
+const modelClient = new AemClient({
+    url,
+    config: {
+        headers: {
+            Authorization: 'Basic YWRtaW46YWRtaW4='
+        }
+    }
+});
 ModelManager.initializeAsync({
     modelClient
 });

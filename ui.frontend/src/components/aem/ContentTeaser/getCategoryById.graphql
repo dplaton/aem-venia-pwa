@@ -1,7 +1,0 @@
-query GetCategoryById($id: Int!) {
-    category(id: $id) {
-        id
-        url_path
-        url_suffix
-    }
-}
