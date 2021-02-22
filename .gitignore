@@ -19,3 +19,4 @@ test-results.json
 yarn-error.log
 clientlib
 **/*.iml
+.yarn

@@ -130,7 +130,7 @@ const apolloLink = ApolloLink.from([
 ]);
 
 const modelClient = new AemClient({
-    url,
+    url: AEM_URL,
     config: {
         headers: {
             Authorization: 'Basic YWRtaW46YWRtaW4='

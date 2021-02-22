@@ -21,7 +21,7 @@ import {
 
 import { fullPageLoadingIndicator } from '@magento/venia-ui/lib/components/LoadingIndicator';
 
-import AemRoute from '@adobe/aem-pwa-studio-extensions';
+import { AemRoute } from '@adobe/aem-pwa-studio-extensions';
 
 const MESSAGES = new Map()
     .set(NOT_FOUND, 'That page could not be found. Please try again.')
@@ -48,7 +48,7 @@ const MagentoRoute = () => {
         return <RootComponent id={id} />;
     } else if (routeError === NOT_FOUND) {
         // we assume it's an AEM route
-
+        console.log(`Do we have an AEM route? `, AemRoute);
         return <AemRoute />;
     }
 

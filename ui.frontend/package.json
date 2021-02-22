@@ -30,11 +30,13 @@
     "@magento/venia-drivers": "src/drivers"
   },
   "dependencies": {
-    "react-slick": "^0.27.14",
+    "@adobe/aem-pwa-studio-extensions": "portal:/Users/platon/projects/Adobe/Commerce/opensource/aem-pwa-studio-extensions",
     "@adobe/aem-react-editable-components": "~1.1.1",
     "@adobe/aem-spa-component-mapping": "^1.0.7",
     "@adobe/aem-spa-page-model-manager": "^1.2.4",
-    "@magento/pwa-buildpack": "~7.0.0"
+    "@magento/pwa-buildpack": "~7.0.0",
+    "react-feather": "^2.0.9",
+    "react-slick": "^0.27.14"
   },
   "devDependencies": {
     "@adobe/apollo-link-mutation-queue": "~1.0.2",
@@ -55,7 +57,7 @@
     "@magento/peregrine": "~8.0.0",
     "@magento/upward-security-headers": "~1.0.0",
     "@magento/venia-ui": "~5.0.0",
-    "@pmmmwh/react-refresh-webpack-plugin": "0.4.1",
+    "@pmmmwh/react-refresh-webpack-plugin": "0.4.3",
     "@storybook/react": "~5.2.6",
     "aem-clientlib-generator": "^1.7.5",
     "apollo-cache-persist": "~0.1.1",
