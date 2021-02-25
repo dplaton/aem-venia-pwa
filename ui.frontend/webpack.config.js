@@ -16,9 +16,22 @@ const {
     graphQL: { getMediaURL, getStoreConfigData, getPossibleTypes }
 } = require('@magento/pwa-buildpack');
 const webpack = require('webpack');
+const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
+const DuplicatePackageCheckerPlugin = require('duplicate-package-checker-webpack-plugin');
 
-// const RootComponentsPlugin = require('./src/RootComponentsPlugin');
+/*
+ * Define a function that resolves an array of dependencies.
+ * If any of this app's dependencies require a module listed in the array,
+ * Webpack will load that module from this app's modules folder.
+ *
+ * Webpack _should_ treat all peer dependencies this way, but it doesn't.
+ */
+const resolvePeerDependencies = (deps = [], folder = './node_modules') =>
+    deps.reduce(
+        (acc, dep) => ({ ...acc, [dep]: path.resolve(`${folder}/${dep}`) }),
+        {}
+    );
 
 module.exports = async env => {
     const mediaUrl = await getMediaURL();
@@ -90,8 +103,25 @@ module.exports = async env => {
                 collapseWhitespace: true,
                 removeComments: true
             }
-        })
+        }),
+        new DuplicatePackageCheckerPlugin()
     ];
+
+    const peerDependencies = [
+        'react',
+        'react-dom',
+        '@adobe/aem-react-editable-components',
+        '@adobe/aem-spa-component-mapping',
+        '@adobe/aem-spa-page-model-manager',
+        '@apollo/client',
+        '@magento/venia-ui',
+        'react-router-dom'
+    ];
+    config.resolve.alias = Object.assign(
+        {},
+        config.resolve.alias,
+        resolvePeerDependencies(peerDependencies)
+    );
 
     return config;
 };

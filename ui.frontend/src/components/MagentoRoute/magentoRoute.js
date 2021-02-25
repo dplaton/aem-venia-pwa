@@ -48,7 +48,6 @@ const MagentoRoute = () => {
         return <RootComponent id={id} />;
     } else if (routeError === NOT_FOUND) {
         // we assume it's an AEM route
-        console.log(`Do we have an AEM route? `, AemRoute);
         return <AemRoute />;
     }
 
